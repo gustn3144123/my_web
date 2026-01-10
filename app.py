@@ -286,4 +286,4 @@ def sign_up():
 
 if __name__ == '__main__':
     load_db()
-    app.run(host='0.0.0.0', debug=False) # 수정되면 재부팅 
+    app.run(host='0.0.0.0', debug=False) 
