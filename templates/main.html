@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #login {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Study cafe</h2>
+        <button id="login">Login</button>
+        <a href="/reservation" style="text-decoration: none;">스터디룸 예약하기</a>
+    </div>
+
+    <script>
+        function login(){
+            return location.href = "/login";
+        }
+
+        button_login = document.getElementById("login");
+        button_login.addEventListener("click",login); // login()은 즉시 실행이니 사용 금지         
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <style>
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>예약 사이트</h2>
+        <form action="/reservation" method="post">
+            <p>룸 번호 : <input type="text" name="room_number" placeholder="(숫자만 입력 1~4) 예: 1"></p>
+            <p>예약일 : <input type="text" name="res_date_s" placeholder="예: 2026.1.1"></p>
+            <p><input type="submit" value="예약하기"></p>
+        </form>
+
+        <form action="/reservation_check" method="get">
+            <p><input type="submit" value="내 예약 보기"></p>
+        </form>
+    </div>
+</body>
+
+</html>
