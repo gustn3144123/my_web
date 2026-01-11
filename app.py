@@ -37,8 +37,8 @@ def load_db():
     """
     cur.execute(sql_user_table)
 
-    sql_hotel = "CREATE DATABASE IF NOT EXISTS study"
-    cur.execute(sql_hotel)
+    sql_studyroom = "CREATE DATABASE IF NOT EXISTS study"
+    cur.execute(studyroom)
 
     sql_room = """
     CREATE TABLE IF NOT EXISTS study.room(
